@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government of Nepal</title>
+    <style>
+        html, body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            position: relative;
+        }
+        header img {
+            width: 10vw;
+            height: auto;
+            max-width: 150px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #fa0101;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #04e6d3;
+            font-size: 2.0rem;
+            padding-top:-100px ;
+          justify-content: space-around;
+          padding-top: 10px;
+            
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+            max-width: 150px;
+        }
+        nav a:hover {
+            background-color: rgb(25, 223, 7);
+        }
+        .content {
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .homeimage, .homekoimg {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            width: 90%;
+        }
+        .homeimage img {
+            width: calc(50% - 20px);
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid #0ce204;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            border: 2px solid #04e6d3;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 90%;
+        }
+        .contact-box {
+            width: 100%;
+            max-width: 45%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f4fdf3;
+            box-sizing: border-box;
+        }
+        .contact-box h2 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+        .contact-box p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        center {
+            text-align: center;
+            padding: 10px;
+            background-color: #ebb70e;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+            left: 0;
+        }
+        .helpcen {
+            padding: 30px;
+        }
+        .cpy0, .cpy1, .cpy2, .cpy3, .cpy4 {
+            margin-top: 300px;
+        }
+
+        .home{
+                font-size: 2rem;
+            }
+
+
+            .aboutus{
+                font-size: xx-large;
+            }
+            .services{
+                font-size: xx-large;
+            }
+            #helpContent{
+                font-size: x-large;
+            }
+        /* Responsive Design */
+        @media (max-width: 1000px) {
+            header h1 {
+                font-size: 1.0rem;
+            }
+            nav {
+                font-size: 1.0rem;
+            }
+            .homeimage img {
+                width: calc(100% - 20px);
+                margin: 10px 0;
+            }
+            .contact-box {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            .home{
+                font-size:1.0rem;
+            }
+            .home{
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 480px) and (max-width: 768px) {
+            header img {
+                width: 30vw;
+            }
+            header h1 {
+                font-size: 1.0rem;
+                margin-top: 50px;
+            }
+            nav a {
+                padding: 10px 5px;
+                display:inline-block;
+            }
+            .contact-box h2 {
+                font-size: 1rem;
+            }
+            .contact-box p {
+                font-size: 0.875rem;
+            }
+            .logoko{
+                max-width: 50px;
+                max-height: 50px;
+            }
+            nav {
+                font-size: 1.0rem;
+            }
+            .home{
+                font-size: 1.0rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                width: 30vw;
+            }
+            header h1 {
+                font-size: 1.0rem;
+                padding-top: 30px;
+            nav a {
+                padding: 10px 5px;
+                text-align: center;
+            }
+            .contact-box h2 {
+                font-size: 1rem;
+            }
+            .contact-box p {
+                font-size: 0.875rem;
+            }
+            .logoko{
+                max-width: 50px;
+                max-height: 50px;
+            }
+            nav {
+                font-size: 1.0rem;
+                flex-direction: column;
+              align-content: center;
+              width:150px;
+              margin-left:150px;
+             
+            }
+
+            .home{
+                font-size: 1.0rem;
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <img class="logoko" src="logo.jpg" alt="Logo">
+    <h1>Government of Nepal<br>
+        Ministry of Culture, Tourism and Civil Aviation<br>
+        Department of Tourism<br>
+        Online Trekking License System</h1>
+</header>
+
+<nav>
+    <a href="#" id="home">Home</a>
+    <a href="#" id="about">About</a>
+    <a href="#" id="services">Services</a>
+    <a href="#" id="contact">Contact</a>
+    <a href="Login/index.php" id="trekking-license-search">Trekking License Search</a>
+   
+    <a href="#" id="help">Help</a>
+</nav>
+
+<div class="content">
+    <div id="homeContent" class="active">
+        <p class="home"  align="center">Welcome to the Online Trekking License System.</p>
+        <div class="homeimage">
+            <img src="prazzol.jpg" alt="Home image 1">
+            <img src="home2.jpg" alt="Home image 2">
+        </div>
+        <center>&copy; 2024 Online Trekking System. All rights reserved.</center>
+    </div>
+
+    <div id="aboutContent" class="hidden">
+        <p class="aboutus" align="justify">Welcome to the <b>Online Trekking License System</b>, your one-stop solution for obtaining printed trekking license smart cards from the comfort of your own home. Our platform is designed to provide a seamless and efficient experience for trekking enthusiasts, making it easier than ever to prepare for your next adventure.<br><br>
+
+            <b>Our Mission</b> <br>
+Our mission is to revolutionize the way trekkers obtain their licenses by leveraging cutting-edge web technologies to create a user-friendly, secure, and intuitive online system. We aim to simplify the process, saving you time and effort so you can focus on what you love—trekking.<br><br>
+
+<b>Our Team</b><br>
+Developed by a dedicated team of B.Sc. CSIT students—Sannosam Sojhe Rai, Sanjeev Basnet, Prajwal Pokhrel, and Kheseyhang Limbu—our platform utilizes the prototyping model to ensure an optimal user experience. We are passionate about both technology and trekking, and we have combined our expertise to bring you this innovative solution.<br><br>
+
+<b>What We Offer?</b><br> 
+
+<b>Comprehensive Search:</b><br> Easily search for and select your desired trekking routes and obtain the necessary licenses.<br>
+<b>Printed Smart Cards:</b> Receive high-quality, printed smart cards that serve as your official trekking licenses.<br>
+<b>Secure and Intuitive Interface:</b> Our platform is designed to be user-friendly, with a focus on security and ease of use.<br>
+<b>Fast and Reliable Service:</b> Enjoy a streamlined process that gets you your trekking licenses quickly and efficiently.<br><br>
+<b>Why Choose Us?</b><br>
+The Online Trekking License System is committed to providing the best possible service to trekking enthusiasts. Whether you are planning a solo adventure or a group expedition, our system is here to support you every step of the way. Join the many satisfied trekkers who have made their license acquisition process hassle-free with our innovative platform.<br><br>
+
+Thank you for choosing the Online Trekking License System. We look forward to being a part of your trekking journey!
+
+</p>
+        <center>&copy; 2024 Online Trekking System. All rights reserved.</center>
+    </div>
+
+    <div id="servicesContent" class="hidden">
+        <p class="services" align="justify">The Government of Nepal, through the Ministry of Culture, Tourism and Civil Aviation and the Department of Tourism, has implemented an Online Trekking License System to streamline the process of issuing and managing trekking licenses. This system offers a convenient way to search for printed cards for trekking guides who have successfully completed the mandatory physical training provided by the Ministry.<br><br><u><b>Key Features</b></u><br><br>
+            Easy Access:
+            The Online Trekking License System can be accessed through the official website of the Department of Tourism. This system is designed to be user-friendly, ensuring that trekking guides and other stakeholders can easily navigate and use the platform.<br><br>
+            Smart Card Search:
+            Once trekking guides have passed the required physical training, their details are uploaded into the system. Users can search for printed cards using the guide's unique identification number or other relevant details. This feature helps verify the authenticity and status of a trekking guide’s certification.<br><br>
+            Centralized Database:
+            All data related to the trekking guides and their certifications are stored in a centralized database managed by the Department of Tourism. This ensures data integrity and provides a single source of truth for all trekking-related certifications.<br><br>
+            Efficient Verification:
+            The system allows for quick and efficient verification of trekking guides' credentials. Tourists and tour operators can use the online platform to ensure that the guides they hire are officially certified and meet the necessary training requirements.<br><br>
+            Support for Physical Training Records:
+            The system maintains records of all physical training sessions conducted by the Ministry. This includes details of the training programs, participants, and their performance. Such records are crucial for maintaining high standards in the trekking industry.<br><br>
+        </p>
+        <center>&copy; 2024 Online Trekking System. All rights reserved.</center>
+    </div>
+
+    <div id="contactContent" class="hidden">
+        <div class="contact-section">
+            <div class="contact-box contact-nepali">
+                <h2>सम्पर्क विवरण</h2>
+                <p>
+                    भृकुटीमण्डप, काठमाण्डौ, नेपाल<br>
+                    फोन : ९७७-१-५३४७०३७<br>
+                    भाइबर : xxxxx<br>
+                    फ्याक्स : xxxx<br>
+                    ईमेल : info@tourismdepartment.gov.np<br>
+                </p>
+            </div>
+            <div class="contact-box contact-english">
+                <h2>Contact Details</h2>
+                <p>
+                    Vrikutimandav, Kathmandu, Nepal<br>
+                    Phone : 977-1-5347037<br>
+                    Viber : xxxxx<br>
+                    Fax : xxxx<br>
+                    Email : info@tourismdepartment.gov.np<br>
+                </p>
+            </div>
+        </div>
+        <center>&copy; 2024 Online Trekking System. All rights reserved.</center>
+    </div>
+
+    <div id="helpContent" class="hidden" align="justify">
+        <b><p align="center"><u>Searching for a Trekking Guide License:</u></p></b><br><br>
+        
+            1) Navigate to the Trekking License search page.<br>
+            2) Enter the trekking guide’s Date of Birth and license number in the search bar.<br>
+            3) Click the "Search License" button to view the results.
+       </div>
+        <center style='font-size:x-large' >&copy; 2024 Online Trekking System. All rights reserved.</center>
+   
+</div>
+
+<script>
+    document.getElementById('home').addEventListener('click', function() {
+        displaySection('homeContent');
+    });
+    document.getElementById('about').addEventListener('click', function() {
+        displaySection('aboutContent');
+    });
+    document.getElementById('services').addEventListener('click', function() {
+        displaySection('servicesContent');
+    });
+    document.getElementById('contact').addEventListener('click', function() {
+        displaySection('contactContent');
+    });
+    document.getElementById('help').addEventListener('click', function() {
+        displaySection('helpContent');
+    });
+
+    function displaySection(sectionId) {
+        const sections = document.querySelectorAll('.content > div');
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.classList.remove('hidden');
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+                section.classList.add('hidden');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

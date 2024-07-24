@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>License Search</title>
+  <style> 
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(151, 192, 170);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Centered title styling */
+    .title {
+      text-align: center;
+      font-size: 2.8rem;
+      color: rgb(194, 20, 20);
+      margin-top: 40px;
+    }
+
+    /* Fieldset styling */
+    fieldset {
+      margin: 50px auto;
+      width: 90%;
+      max-width: 1000px;
+      background-color: rgb(151, 192, 170);
+      border: 1px solid rgb(151, 192, 170);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    /* Form label styling */
+    .form-label {
+      display: block;
+      font-size: 1.6rem;
+      margin: 40px 0 10px 0;
+    }
+
+    /* Form input styling */
+    input[type="date"], input[type="text"] {
+      width: calc(100% - 20px);
+      max-width: 400px;
+      font-size: 1.6rem;
+      padding: 10px;
+      margin: 10px 0;
+      display: block;
+    }
+
+    /* Submit button styling */
+    .btn {
+      display: block;
+      width: calc(100% - 20px);
+      max-width: 400px;
+      font-size: 2rem;
+      color: green;
+      background-color: #fff;
+      border: 2px solid green;
+      padding: 10px;
+      margin: 60px auto 0 auto;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: green;
+      color: #fff;
+    }
+
+    /* Footer styling */
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ebb70e;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="title">Enter License Number and Date of Birth To Find Trekking License Card</div>
+  <form action="generate_card.php" method="post">
+    <fieldset>
+      <label class="form-label" for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      <label class="form-label" for="license">License Number:</label>
+      <input type="text" id="license" name="license" required>
+      <button class="btn" type="submit">Search License</button>
+    </fieldset>
+  </form>
+  <div id="card"></div>
+  <div class="footer" style='font-size:x-large'>&copy; 2024 Online Trekking System. All rights reserved.</div>
+</body>
+</html>
