@@ -12,7 +12,7 @@ CREATE TABLE trekking_records (
 );
 /* Prajwal ko Lagi*/
 INSERT INTO trekking_records (dateofbirth, licensenumber, name, address, fathersname, citizenshipnumber, dateofissue, dateofexpiry, issuedby) 
-VALUES ('2000-01-01', '12345', 'Prajwal Pokhrel', 'Jhapa, Nepal', 'Devi Pokhrel', '12345', '2024-01-01', '2030-01-01', 'Trekking CEO');
+VALUES ('2000-01-01', '12345', 'Prajwal Pokhrel', 'Jhapa, Nepal', 'Devi Prasad Pokhrel', '12345', '2024-01-01', '2030-01-01', 'Trekking CEO');
 
 /*sannosam Rai ko  lagi*/
 INSERT INTO trekking_records (dateofbirth, licensenumber, name, address, fathersname, citizenshipnumber, dateofissue, dateofexpiry, issuedby) 
