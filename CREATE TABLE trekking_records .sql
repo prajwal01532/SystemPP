@@ -25,4 +25,4 @@ VALUES ('2002-01-01', '1234567', 'Sanjiv Basnet', 'Ilam, Nepal', 'Rajendra Basne
 
 /*keshehang Limbu */
 INSERT INTO trekking_records (dateofbirth, licensenumber, name, address, fathersname, citizenshipnumber, dateofissue, dateofexpiry, issuedby) 
-VALUES ('2003-01-01', '1234567', 'kesehnag Limbu', 'Jhapa, Nepal', 'Ram Limbu', '12345678', '2024-01-01', '2030-01-01', 'Trekking CEO');
+VALUES ('2003-01-01', '1234567', 'kesehnag Limbu', 'Jhapa, Nepal', 'Bhupendra Bhadur Limbu', '12345678', '2024-01-01', '2030-01-01', 'Trekking CEO');
